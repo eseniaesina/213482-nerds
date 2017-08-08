@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Есения Есина](https://up.htmlacademy.ru/htmlcss/18/user/213482).
-* Наставник: `Неизвестно`.
+* Наставник: [Ксения Торкова](https://htmlacademy.ru/profile/ksenya).
 
 ---
 
