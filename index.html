@@ -72,7 +72,7 @@
 					<li class="services-item present">
 						<h3>Презентации</h3>
 						<p>
-						Вы даже не подозреваете,<br />
+						Вы даже не подозреваете,<br>
 						насколько вы изумительны!
 						</p>
 						<a class="button" href="#">Заказать</a>
@@ -95,18 +95,18 @@
 			<section class="statistic">
 				<img src="img/logo_color.png" width="" height="" alt="Логотип дизайн-студии Нёрдс">
 				<h4>С 2004 года любим точность во всем:</h4>
-				<p class="statistic-information">
-					<b>146%</b><br>
-					Уровень самоотдачи
-				</p>
-				<p class="statistic-information">
-					<b>100%</b><br>
-					Соблюдение сроков
-				</p>
-				<p class="statistic-information">
-					<b>50%</b><br>
-					Минимальная предоплата
-				</p>
+				<table class="statistic-information">
+					<tr>
+						<th>146%</th>
+						<th>100%</th>
+						<th>50%</th>
+					</tr>
+					<tr>
+						<td>Уровень самоотдачи</td>
+						<td>Соблюдение сроков</td>
+						<td>Минимальная предоплата</td>
+					</tr>
+				</table>
 			</section>
 			<section class="partners">
 			<h2 class="visually-hidden">Партнеры</h2>
@@ -138,6 +138,7 @@
 		<footer class="main-footer">
 			<section class="contacts">
 				<div class="footer-map">
+					<img src="img/map_contacts.jpg" width="" height="" alt="Карта">
 				</div>
 				<div class="footer-contacts">
 					<b>Nёrds Design Studio</b>
@@ -146,7 +147,7 @@
 					ул. Б. Конюшенная, д. 19/8
 					</p>
 					<p>
-					тел. +7(812) 275-75-75
+					тел. <a href="tel:+78122757575">+7(812) 275-75-75</a>
 					</p>
 					<a class="button button-contacts" href="contacts.html">Обратная связь</a>
 				</div>
@@ -154,7 +155,7 @@
 			<section class="social">
 				<div class="footer-social">
 					<ul>
-						<li><a class="social-button" href="#">Вконтекте</a></li>
+						<li><a class="social-button" href="#">Вконтакте</a></li>
 						<li><a class="social-button" href="#">Фейсбук</a></li>
 						<li><a class="social-button" href="#">Инстаграм</a></li>
 					</ul>
@@ -175,11 +176,11 @@
 				</p>
 				<p class="write-us-item">
 				Ваш e-mail:
-					<input type="text" name="mail" value="" placeholder="Для отправки ответа">
+					<input type="email" name="mail" value="" placeholder="Для отправки ответа">
 				</p>
 				<p class="write-us-item">
 				Текст письма:
-					<input type="text" name="text" value="" placeholder="В свободной форме">
+					<textarea name="text" id="text-field" rows="6" placeholder="В свободной форме"></textarea>
 				</p>
 				<button class="button" type="submit">Отправить</button>
 			</form>
