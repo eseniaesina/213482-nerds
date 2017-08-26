@@ -18,7 +18,9 @@
 					<li><a href="contacts.html">Контакты</a></li>
 				</ul>
 				<ul class="user-navigation">
-					<li class="basket">Корзина</li>
+					<li class="basket">
+						<a class="basket" href="basket.html">Корзина</a>
+					</li>
 				</ul>
 			</nav>
 		</header>
@@ -40,16 +42,16 @@
 						<legend>Сетка:</legend>
 						<ul>
 							<li class="filter-option">
-								<input class="filter-input filter-input-radio" type="radio" name="grid" value="adaptation" checked>
-								Адаптивная
+								<input class="filter-input filter-input-radio" id="filter-adaptation" type="radio" name="grid" value="adaptation" checked>
+								<label for="filter-adaptation">Адаптивная</label>
 							</li>
 							<li class="filter-option">
-								<input class="filter-input filter-input-radio" type="radio" name="grid" value="fixed">
-								Фиксированная
+								<input class="filter-input filter-input-radio" id="filter-fixed" type="radio" name="grid" value="fixed">
+								<label for="filter-fixed">Фиксированная</label>
 							</li>
 							<li class="filter-option">
-								<input class="filter-input filter-input-radio" type="radio" name="grid" value="stretchy">
-								Резиновая
+								<input class="filter-input filter-input-radio" id="filter-stretchy" type="radio" name="grid" value="stretchy">
+								<label for="filter-stretchy">Резиновая</label>
 							</li>
 						</ul>
 					</fieldset>
@@ -57,24 +59,24 @@
 						<legend>Особенности:</legend>
 						<ul>
 							<li class="filter-option">
-								<input class="filter-input filter-input-checkbox" type="checkbox" name="slider" checked>
-								Слайдер
+								<input class="filter-input filter-input-checkbox" id="filter-slider" type="checkbox" name="slider" checked>
+								<label for="filter-slider">Слайдер</label>
 							</li>
 							<li class="filter-option">
-								<input class="filter-input filter-input-checkbox" type="checkbox" name="advantages">
-								Блок преимуществ
+								<input class="filter-input filter-input-checkbox" id="filter-advantages" type="checkbox" name="advantages">
+								<label for="filter-advantages">Блок преимуществ</label>
 							</li>
 							<li class="filter-option">
-								<input class="filter-input filter-input-checkbox" type="checkbox" name="news" checked>
-								Новости
+								<input class="filter-input filter-input-checkbox" id="filter-news" type="checkbox" name="news" checked>
+								<label for="filter-news">Новости</label>
 							</li>
 							<li class="filter-option">
-								<input class="filter-input filter-input-checkbox" type="checkbox" name="gallery">
-								Галерея
+								<input class="filter-input filter-input-checkbox" id="filter-gallery" type="checkbox" name="gallery">
+								<label for="filter-gallery">Галерея</label>
 							</li>
 							<li class="filter-option">
-								<input class="filter-input filter-input-checkbox" type="checkbox" name="basket">
-								Корзина
+								<input class="filter-input filter-input-checkbox" id="filter-basket" type="checkbox" name="basket">
+								<label for="filter-basket">Корзина</label>
 							</li>
 						</ul>
 					</fieldset>
@@ -189,20 +191,20 @@
 			<h2>Напишите нам</h2>
 			<form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
 				<p class="write-us-item">
-				Ваше имя:
-					<input type="text" name="name" value="" placeholder="Представьтесь, пожалуйста">
+					<label for="write-us-name">Ваше имя:</label>
+					<input id="write-us-name" type="text" name="name" value="" placeholder="Представьтесь, пожалуйста">
 				</p>
 				<p class="write-us-item">
-				Ваш e-mail:
-					<input type="text" name="mail" value="" placeholder="Для отправки ответа">
+					<label for="write-us-mail">Ваш e-mail:</label>
+					<input id="write-us-mail" type="email" name="mail" value="" placeholder="Для отправки ответа">
 				</p>
 				<p class="write-us-item">
-				Текст письма:
-					<input type="text" name="text" value="" placeholder="В свободной форме">
+					<label for="text-field">Текст письма:</label>
+					<textarea name="text" id="text-field" rows="6" placeholder="В свободной форме"></textarea>
 				</p>
 				<button class="button" type="submit">Отправить</button>
 			</form>
-			<span class="modal-close">x</span>
+			<button class="modal-close" type="button">Закрыть</button>
 		</section>
 	</body>
 </html>
