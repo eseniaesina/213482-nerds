@@ -192,19 +192,13 @@ a {
 	list-style: none;
 }
 
-.footer-social li {
+.social-button {
 	display: inline-block;
 	background-color: #e1e1e1;
+	color: #ffffff;
 	height: 78px;
 	width: 78px;
 	border-radius: 50%;
-	color: #ffffff;
-	text-align: center;
-	vertical-align: middle;
-}
-
-.social-button {
-	color: #ffffff;
 }
 
 .social-button:hover {
