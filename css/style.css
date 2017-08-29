@@ -153,6 +153,20 @@ a {
 	list-style: none;
 }
 
+.statistic-information td {
+	font-size: 45px;
+	line-height: 10px;
+	font-weight: bold;
+	color: #000000;
+}
+
+.statistic-information th {
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: regular;
+	color: #283136;
+}
+
 .partners-list {
 	list-style: none;
 }
@@ -178,8 +192,28 @@ a {
 	list-style: none;
 }
 
+.footer-social li {
+	display: inline-block;
+	background-color: #e1e1e1;
+	height: 78px;
+	width: 78px;
+	border-radius: 50%;
+	color: #ffffff;
+	text-align: center;
+	vertical-align: middle;
+}
+
 .social-button {
-	color: #ffffff; //нужен ли 
+	color: #ffffff;
+}
+
+.social-button:hover {
+	background-color: #e74246;
+}
+
+.social-button:focus {
+	background-color: #d7373b;
+	color: rgba(255,255,255,0.3);
 }
 
 .footer-social-slogan {
