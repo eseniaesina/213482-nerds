@@ -60,8 +60,41 @@ a {
 	color: #000000;
 }
 
-.services {
+.button {
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: medium;
+	text-align: center;
+	vertical-align: middle;
+	color: #ffffff;
+	text-transform: uppercase;
+	border: none;
+	background-color: #fb565a;
+}
+
+.button:hover {
+	background-color: #e74246;
+}
+
+.button:focus {
+	background-color: #d7373b;
+	color: rgba(255,255,255,0.3);
+}
+
+.index-columns {
 	border-bottom: 2px solid #eeeeee;
+}
+
+.index-columns b {
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: medium;
+	color: #000000;
+}
+
+.index-columns h4 {
+	color: #000000;
+	text-transform: uppercase;
 }
 
 .services-list h3 {
@@ -71,7 +104,6 @@ a {
 	color: #000000;
 	text-transform: uppercase;
 }
-
 
 .site {
 	background-image: url("../img/illustration1.jpg");
@@ -85,11 +117,103 @@ a {
 	background-repeat: no-repeat;
 }
 
+.application .button {
+	background-color: #00ca74;
+}
+
+.application .button:hover {
+	background-color: #00bc6c;
+}
+
+.application .button:focus {
+	background-color: #00aa62;
+	color: rgba(255,255,255,0.3);
+}
+
 .present {
 	background-image: url("../img/illustration3.jpg");
 	background-position: top center;
 	background-repeat: no-repeat;
 }
+
+.present .button {
+	background-color: #efc84a;
+}
+
+.present .button:hover {
+	background-color: #eab534;
+}
+
+.present .button:focus {
+	background-color: #e5a722;
+	color: rgba(255,255,255,0.3);
+}
+
+.rules-work  {
+	list-style: none;
+}
+
+.partners-list {
+	list-style: none;
+}
+
+.partners-item a {
+	list-style: none;
+	opacity: 0.2;
+}
+
+.partners-item a:hover {
+	opacity: 1;
+}
+
+.partners-item a:focus {
+	opacity: 0.1;
+}
+
+.footer-social {
+	text-align: left;
+}
+
+.footer-social ul {
+	list-style: none;
+}
+
+.social-button {
+	color: #ffffff; //нужен ли 
+}
+
+.footer-social-slogan {
+	text-align: left;
+}
+
+.footer-social-slogan b {
+	font-size: 36px;
+	line-height: 36px;
+	font-weight: regular;
+	color: #000000;
+}
+
+.footer-social-slogan p {
+	font-size: 16px;
+	line-height: 22px;
+	color: 
+}
+
+.mobile a {
+	color: #283136;
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
