@@ -56,12 +56,14 @@ a {
 }
 
 .page-title {
+	background-color: #eeeeee;
+	text-align: center;
+}
+
+.page-title h1 {
 	font-size: 55px;
 	line-height: 55px;
 	color: #000000;
-	background-color: #eeeeee; //нужно ли делать цвет фона заголовку или нужно выделиь отдельный блок и поместить в него заголовок?
-	
-	text-align: center; //почему-то не работает
 }
 
 .slider-item {
@@ -197,6 +199,17 @@ a {
 .partners-item a:focus {
 	opacity: 0.1;
 }
+
+.filter fieldset {
+	border: none;
+}
+
+.filter legend {
+	font-size: 18px;
+	line-height: 30px;
+}
+
+
 
 .footer-social {
 	text-align: left;
