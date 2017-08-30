@@ -16,7 +16,7 @@ a {
 	text-decoration: none; //отменяем у ссылок подчеркивание
 }
 
-.main-header {	
+.main-header {
 	background-color: #eeeeee;
 	background-image: url("../img/pattern_light.jpg");
 	background-position: top center;
@@ -26,6 +26,7 @@ a {
 .main-navigation {
 	font-size: 16px;
 	line-height: 30px;
+	font-weight: medium;
 	color: #000000;
 	text-transform: uppercase;
 }
@@ -33,6 +34,10 @@ a {
 .site-navigation,
 .user-navigation {
 	list-style: none;
+}
+
+.site-navigation-current a {
+	border-bottom: 2px solid #fb565a;
 }
 
 .site-navigation a,
@@ -48,6 +53,15 @@ a {
 .site-navigation a:focus,
 .user-navigation a:focus {
 	color: rgba(0,0,0,0.3);
+}
+
+.page-title {
+	font-size: 55px;
+	line-height: 55px;
+	color: #000000;
+	background-color: #eeeeee; //нужно ли делать цвет фона заголовку или нужно выделиь отдельный блок и поместить в него заголовок?
+	
+	text-align: center; //почему-то не работает
 }
 
 .slider-item {
@@ -267,14 +281,4 @@ a {
 
 
 
-
-
-
-
-
-.page-title {
-	font-size: 55px;
-	line-height: 55px;
-	color: #000000;
-}
 
