@@ -232,11 +232,38 @@ a {
 	text-decoration: none;
 }
 
+.modal {
+	color: #000000;
+	background-color: #ffffff;
+	box-shadow: 0 20px 0 40px #ffffff;  //сомневаюсь, нужно будет потом проверить
+}
 
+.modal h2 {
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: medium;
+}
 
+.write-us-item input,
+.write-us-item textarea {
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: regular;
+	
+	background-color: transparent;
+	border: 2px solid #d7dcde;
+	border-radius: 3px;
+}
 
+.write-us-item input:hover,
+.write-us-item textarea:hover {
+	border-color: #b4b9bb;
+}
 
-
+.write-us-item input:focus,
+.write-us-item textarea:focus {
+	border-color: #ffffff;
+}
 
 
 
