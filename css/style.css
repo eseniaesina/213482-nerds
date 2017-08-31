@@ -86,6 +86,7 @@ a {
 	color: #ffffff;
 	text-transform: uppercase;
 	border: none;
+	border-radius: 3px;
 	background-color: #fb565a;
 }
 
@@ -253,17 +254,61 @@ a {
 	color: #000000;
 }
 
+.catalog-list {
+	list-style: none;
+}
 
+.catalog-buy-item {
+	background-color: #eeeeee;
+	text-align: center;
+}
 
+.catalog-buy-item h3 {
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: bold;
+	color: #000000;
+	
+	text-transform: uppercase;
+}
 
+.catalog-buy-item a {
+	color: #000000;
+}
 
+.pagination-list {
+	list-style: none;
+}
 
+.pagination-item li {
+	font-size: 16px;
+	line-height: 18px;
+}
 
+.pagination-item a{
+	color: #000000;
+	background-color: #eeeeee;
+	border-radius: 3px;
+}
 
+.pagination-item a:hover {
+	background-color: #dfdfdf;
+}
 
+.pagination-item a:focus {
+	background-color: #d5d5d5;
+	box-shadow: 0 3px 0 rgba(0,1,1,0.1) inset;
+}
 
+.pagination-item-current a {
+	background-color: #ffffff;
+	border: 3px solid #dbdbdb;
+}
 
-
+.pagination-item-current a:hover {
+	background-color: #ffffff;
+	border: 3px solid #dbdbdb;
+}
 
 .footer-contacts b {
 	font-size: 18px;
