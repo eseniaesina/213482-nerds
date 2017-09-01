@@ -18,14 +18,12 @@ a {
 
 .main-header {
 	background-color: #eeeeee;
-	background-position: top center;
-	background-repeat: no-repeat;
 }
 
 .main-navigation {
 	font-size: 16px;
 	line-height: 30px;
-	font-weight: medium;
+	font-weight: 500;
 	color: #000000;
 	text-transform: uppercase;
 }
@@ -44,27 +42,25 @@ a {
 	color: #000000;
 }
 
-.site-navigation a:hover,
-.user-navigation a:hover {
+.site-navigation a[href]:hover,
+.site-navigation a[href]:focus,
+.user-navigation a[href]:hover,
+.user-navigation a[href]:focus {
 	color: #fb565a;
 }
 
-.site-navigation a:focus,
-.user-navigation a:focus {
+.site-navigation a[href]:active,
+.user-navigation a[href]:active {
 	color: rgba(0,0,0,0.3);
 }
 
 .container h1 {
 	font-size: 55px;
 	line-height: 55px;
-	font-weight: medium;
+	font-weight: 500;
 	color: #000000;
 	background-color: #eeeeee;
 	text-align: center;
-}
-
-.slider-item {
-	text-align: left;
 }
 
 .slider-item h2 {
@@ -74,9 +70,10 @@ a {
 }
 
 .button {
+	display: inline-block;
 	font-size: 16px;
 	line-height: 18px;
-	font-weight: medium;
+	font-weight: 500;
 	text-align: center;
 	vertical-align: middle;
 	color: #ffffff;
@@ -86,13 +83,15 @@ a {
 	background-color: #fb565a;
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
 	background-color: #e74246;
 }
 
-.button:focus {
+.button:active {
 	background-color: #d7373b;
 	color: rgba(255,255,255,0.3);
+	box-shadow: 0 3px 0 rgba(0,1,1,0.1) inset;
 }
 
 .index-columns {
@@ -102,7 +101,7 @@ a {
 .index-columns b {
 	font-size: 45px;
 	line-height: 45px;
-	font-weight: medium;
+	font-weight: 500;
 	color: #000000;
 }
 
@@ -135,11 +134,12 @@ a {
 	background-color: #00ca74;
 }
 
-.application .button:hover {
+.application .button:hover,
+.application .button:focus {
 	background-color: #00bc6c;
 }
 
-.application .button:focus {
+.application .button:active {
 	background-color: #00aa62;
 	color: rgba(255,255,255,0.3);
 }
@@ -154,11 +154,12 @@ a {
 	background-color: #efc84a;
 }
 
-.present .button:hover {
+.present .button:hover,
+.present .button:focus {
 	background-color: #eab534;
 }
 
-.present .button:focus {
+.present .button:active {
 	background-color: #e5a722;
 	color: rgba(255,255,255,0.3);
 }
@@ -169,7 +170,6 @@ a {
 
 .statistic-information td {
 	font-size: 45px;
-	line-height: 10px;
 	font-weight: bold;
 	color: #000000;
 }
@@ -177,7 +177,7 @@ a {
 .statistic-information th {
 	font-size: 16px;
 	line-height: 18px;
-	font-weight: regular;
+	font-weight: 400;
 	color: #283136;
 }
 
@@ -190,11 +190,12 @@ a {
 	opacity: 0.2;
 }
 
-.partners-item a:hover {
+.partners-item a:hover,
+.partners-item a:focus {
 	opacity: 1;
 }
 
-.partners-item a:focus {
+.partners-item a:active {
 	opacity: 0.1;
 }
 
@@ -211,15 +212,16 @@ a {
 .filter ul {
 	list-style: none;
 	font-size: 16px;
-	font-weight: regular;
+	font-weight: 400;
 	line-height: 20px;
 }
 
 .filter-input {
+	font: inherit;
 	color: #283136;
 }
 
-.filter-input:hover + label {
+.filter label:hover {
 	color: #000000;
 }
 
@@ -237,16 +239,21 @@ a {
 .sorting a {
 	font-size: 14px;
 	line-height: 18px;
-	font-weight: regular;
+	font-weight: 400;
 	color: rgba(0,0,0,0.3);
+	text-transform: uppercase;
 }
 
-.sorting a:hover {
+.sorting a.sorting-current {
+	color: rgba(0,0,0,1);
+}
+
+.sorting a[href]:hover,
+.sorting a[href]:focus {
 	color: rgba(0,0,0,0.6);
 }
 
-.sorting a:focus,
-.sorting a:active {
+.sorting a[href]:active {
 	color: #000000;
 }
 
@@ -287,11 +294,12 @@ a {
 	border-radius: 3px;
 }
 
-.pagination-item a:hover {
+.pagination-item a:hover,
+.pagination-item a:focus {
 	background-color: #dfdfdf;
 }
 
-.pagination-item a:focus {
+.pagination-item a:active {
 	background-color: #d5d5d5;
 	box-shadow: 0 3px 0 rgba(0,1,1,0.1) inset;
 }
@@ -330,13 +338,13 @@ a {
 	border-radius: 50%;
 }
 
-.social-button:hover {
+.social-button:hover,
+.social-button:focus {
 	background-color: #e74246;
 }
 
-.social-button:focus {
+.social-button:active {
 	background-color: #d7373b;
-	color: rgba(255,255,255,0.3);
 }
 
 .footer-social-slogan {
@@ -346,18 +354,18 @@ a {
 .footer-social-slogan b {
 	font-size: 36px;
 	line-height: 36px;
-	font-weight: regular;
+	font-weight: 400;
 	color: #000000;
 }
 
 .footer-social-slogan p {
 	font-size: 16px;
 	line-height: 22px;
-	color: 
+	color: #444444;
 }
 
 .mobile a {
-	color: #283136;
+	color: #666666;
 	text-decoration: none;
 }
 
@@ -370,7 +378,7 @@ a {
 .modal h2 {
 	font-size: 45px;
 	line-height: 45px;
-	font-weight: medium;
+	font-weight: 500;
 }
 
 .write-us-item label {
@@ -383,7 +391,7 @@ a {
 .write-us-item textarea {
 	font-size: 16px;
 	line-height: 18px;
-	font-weight: regular;
+	font-weight: 400;
 	
 	background-color: transparent;
 	border: 2px solid #d7dcde;
@@ -391,13 +399,15 @@ a {
 }
 
 .write-us-item input:hover,
-.write-us-item textarea:hover {
+.write-us-item input:focus,
+.write-us-item textarea:hover,
+.write-us-item textarea:focus {
 	border-color: #b4b9bb;
 }
 
-.write-us-item input:focus,
-.write-us-item textarea:focus {
-	border-color: #ffffff;
+.write-us-item input:active,
+.write-us-item textarea:active {
+	border-color: #444444;
 }
 
 
