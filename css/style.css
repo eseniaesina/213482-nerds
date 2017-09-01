@@ -18,7 +18,6 @@ a {
 
 .main-header {
 	background-color: #eeeeee;
-	background-image: url("../img/pattern_light.jpg");
 	background-position: top center;
 	background-repeat: no-repeat;
 }
@@ -55,16 +54,13 @@ a {
 	color: rgba(0,0,0,0.3);
 }
 
-.page-title {
-	background-color: #eeeeee;
-	text-align: center;
-}
-
-.page-title h1 {
+.container h1 {
 	font-size: 55px;
 	line-height: 55px;
 	font-weight: medium;
 	color: #000000;
+	background-color: #eeeeee;
+	text-align: center;
 }
 
 .slider-item {
