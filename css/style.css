@@ -414,6 +414,24 @@ a {
 }
 
 
+/* ------- Сеточные стили ------ */
 
+html,
+body {
+	min-width: 1200px;
+	min-height: 2470px;
+}
 
+body {
+	/* Временно для сетки */
+	background-image: url("../img/nerds-index-grid.jpg");
+	background-size: 1280px auto;
+	background-repeat: no-repeat;
+}
 
+.main-header {
+	
+	/* Временно для сетки */
+	min-height: 545px;
+	background-color: transparent;
+}
