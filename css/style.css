@@ -381,6 +381,11 @@ a {
 	font-weight: 500;
 }
 
+.write-us-form input,
+.write-us-form textarea {
+	outline: none;
+}
+
 .write-us-item label {
 	font-size: 16px;
 	line-height: 18px;
@@ -399,16 +404,15 @@ a {
 }
 
 .write-us-item input:hover,
-.write-us-item input:focus,
-.write-us-item textarea:hover,
-.write-us-item textarea:focus {
+.write-us-item textarea:hover {
 	border-color: #b4b9bb;
 }
 
-.write-us-item input:active,
-.write-us-item textarea:active {
+.write-us-item input:focus,
+.write-us-item textarea:focus {
 	border-color: #444444;
 }
+
 
 
 
