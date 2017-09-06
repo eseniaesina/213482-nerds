@@ -419,7 +419,7 @@ a {
 
 .container {
 	width: 1160px;
-	margin: 0 auto;
+	margin: 0 0;
 	padding: 0 20px;
 }
 
@@ -439,6 +439,7 @@ a {
 	display: flex;
 	flex-direction: row;
 	align-items: flex-start;
+
 	margin-top: 45px;
 	
 	/* Временно для сетки */
@@ -448,13 +449,13 @@ a {
 
 .main-header-logo {
 	order: 0;
-	
 	width: 300px;
-	height: 65px;
+
 	
 	/* Временно для сетки */
 	/*display: block;*/
 	outline: 1px solid green;
+	min-height: 70px;
 }
 
 
@@ -463,11 +464,12 @@ a {
 	width: 540px;
 	margin: 0;
 	padding: 0;
+	margin-left: 60px;
 	
 	list-style: none;
 	
 	/* Временно для сетки */
-	min-height: 65px;
+	min-height: 70px;
 	outline: 1px solid green;
 }
 
@@ -480,7 +482,7 @@ a {
 	list-style: none;
 	
 	/* Временно для сетки */
-	min-height: 65px;
+	min-height: 70px;
 	outline: 1px solid green;
 }
 
