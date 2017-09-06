@@ -419,6 +419,7 @@ a {
 
 
 .main-header {
+	margin-bottom: 80px;
 	
 	/* Временно для сетки */
 	min-height: 545px;
@@ -426,8 +427,62 @@ a {
 }
 
 .main-navigation {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	
 	/* Временно для сетки */
 	min-height: 545px;
 	background-color: transparent;
 	outline: 1px solid #000;
+}
+
+.container {
+	width: 1160px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.main-navigation .container {
+	margin-top: 50px;
+}
+
+.main-navigation-logo {
+	order: 0;
+	
+	width: 160px;
+	height: 65px;
+	padding: 0 20px;
+	
+	
+	/* Временно для сетки */
+	outline: 1px solid red;
+	min-height: 65px;
+}
+
+.site-navigation,
+.user-navigation {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	
+	/* Временно для сетки */
+	outline: 1px solid red;
+}	
+	
+.site-navigation {
+	width: 660px;
+	
+	/* Временно для сетки */
+	min-height: 65px;
+	outline: 1px solid red;
+}
+
+.user-navigation {
+	width: 160px;
+	margin-left: auto;
+	
+	/* Временно для сетки */
+	min-height: 65px;
+	outline: 1px solid red;
 }
