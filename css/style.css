@@ -417,22 +417,14 @@ a {
 /* ------- Сеточные стили ------ */
 
 
-.container {
-	width: 1160px;
-	margin: 0 0;
-	padding: 0 20px;
-}
 
 .main-header {
+	margin-top: 50px;
 	margin-bottom: 80px;
-<<<<<<< HEAD
-=======
-	
 	background-color: #eeeeee;
->>>>>>> 2ab4d9bbb4b3f9d13eda66a072318e7695fa81ad
 	
 	/* Временно для сетки */
-	min-height: 500px;
+	min-height: 545px;
 	outline: 1px solid red;
 	background-color: transparent;
 
@@ -442,27 +434,19 @@ a {
 	display: flex;
 	flex-direction: row;
 	align-items: flex-start;
-<<<<<<< HEAD
-=======
-
-	margin-top: 45px;
->>>>>>> 2ab4d9bbb4b3f9d13eda66a072318e7695fa81ad
 	
 	/* Временно для сетки */
-	min-height: 500px;
-	background-color: transparent;
+	min-height: 545px;
+
 }
 
-<<<<<<< HEAD
 .container {
 	width: 1160px;
 	margin: 0 auto;
 	padding: 0 20px;
 }
 
-.main-navigation .container {
-	margin-top: 50px;
-}
+
 
 .main-navigation-logo {
 	order: 0;
@@ -503,44 +487,5 @@ a {
 	min-height: 65px;
 	outline: 1px solid red;
 }
-=======
-.main-header-logo {
-	order: 0;
-	width: 300px;
-
-	
-	/* Временно для сетки */
-	/*display: block;*/
-	outline: 1px solid green;
-	min-height: 70px;
-}
 
 
-
-.site-navigation {
-	width: 540px;
-	margin: 0;
-	padding: 0;
-	margin-left: 60px;
-	
-	list-style: none;
-	
-	/* Временно для сетки */
-	min-height: 70px;
-	outline: 1px solid green;
-}
-
-.user-navigation {
-	width: 200px;
-	margin: 0;
-	padding: 0;
-	margin-left: auto;
-	
-	list-style: none;
-	
-	/* Временно для сетки */
-	min-height: 70px;
-	outline: 1px solid green;
-}
-
->>>>>>> 2ab4d9bbb4b3f9d13eda66a072318e7695fa81ad
