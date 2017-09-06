@@ -111,6 +111,7 @@ a {
 }
 
 .services-list h3 {
+	padding-top: 145px;
 	font-size: 24px;
 	line-height: 30px;
 	font-weight: bold;
@@ -419,14 +420,13 @@ a {
 
 
 .main-header {
-	margin-top: 50px;
 	margin-bottom: 80px;
 	background-color: #eeeeee;
 	
 	/* Временно для сетки */
 	min-height: 545px;
 	outline: 1px solid red;
-	background-color: transparent;
+
 
 }
 
@@ -443,7 +443,10 @@ a {
 .container {
 	width: 1160px;
 	margin: 0 auto;
-	padding: 0 20px;
+	padding: 0 0;
+	
+	/* Временно для сетки */
+	outline: 1px solid grey;
 }
 
 
@@ -488,4 +491,37 @@ a {
 	outline: 1px solid red;
 }
 
+.slider {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	outline: 1px solid green;
+}
 
+.slider-item {
+	width: 1160px;
+	
+	/* Временно для сетки */
+	min-height: 430px;
+	outline: 1px solid red;
+}
+
+.services {
+	width: 1100px;
+	margin-bottom: 80px;
+}
+
+.services-list {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.services-item {
+	width: 300px;
+	text-align: left;
+}
