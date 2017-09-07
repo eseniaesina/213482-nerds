@@ -425,9 +425,14 @@ a {
 	background-color: #eeeeee;
 	
 	/* Временно для сетки */
-	min-height: 545px;
+	/*min-height: 545px; убрала из-за внутреннего страницы - меньше высота хедера */
 
 
+}
+
+.main-header .inner {
+	/* Временно для сетки */
+	min-height: 65px;
 }
 
 .main-navigation {
