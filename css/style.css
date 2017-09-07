@@ -421,6 +421,7 @@ a {
 
 .main-header {
 	margin-bottom: 80px;
+	padding-top: 50px;
 	background-color: #eeeeee;
 	
 	/* Временно для сетки */
@@ -435,32 +436,16 @@ a {
 	align-items: flex-start;
 	
 	/* Временно для сетки */
-	min-height: 545px;
-
 }
 
 .container {
 	width: 1160px;
 	margin: 0 auto;
-	padding: 0 0;
-	
-
-}
-
-
-
-.main-navigation-logo {
-	order: 0;
-	
-	width: 160px;
-	height: 65px;
 	padding: 0 20px;
 	
-	
-	/* Временно для сетки */
 
-	min-height: 65px;
 }
+
 
 .site-navigation,
 .user-navigation {
@@ -495,7 +480,7 @@ a {
 }
 
 .slider-item {
-	width: 1160px;
+
 	
 	/* Временно для сетки */
 	min-height: 430px;
@@ -556,4 +541,29 @@ a {
 
 .footer-social-slogan {
 	padding-left: 100px;
+}
+
+.slider-item2,
+.slider-item3 {
+	display: none;
+}
+
+.modal {
+	display: none;
+}
+
+.visually-hidden {
+	position: absolute;
+
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+
+	white-space: nowrap;
+
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
 }
