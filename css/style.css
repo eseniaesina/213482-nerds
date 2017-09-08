@@ -520,12 +520,16 @@ main h1 {
 .catalog-list {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-between;
 	padding: 0;
 	margin: 0;
 }
 
 .catalog-item {
 	width: 360px;
+}
+
+.catalog-item:nth-child(odd) {
 	margin-right: 20px;
 }
 
@@ -622,4 +626,9 @@ main h1 {
 
 .pagination-item {
 	margin-right: 12px;
+}
+
+.footer-map img {
+	margin-left: auto;
+	margin-right: auto;
 }
