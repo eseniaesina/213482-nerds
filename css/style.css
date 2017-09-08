@@ -604,3 +604,14 @@ main.container h1 {
 	clip: rect(0 0 0 0);
 	overflow: hidden;
 }
+
+.pagination-list {
+	display: flex;
+	flex-direction: row;
+	width: 460px;
+	padding: 60px 0;
+}
+
+.pagination-item {
+	margin-right: 12px;
+}
