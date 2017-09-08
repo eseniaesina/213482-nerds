@@ -489,12 +489,18 @@ a {
 
 }
 
-main.container {
+.inner {
 	display: flex;
 	flex-wrap: wrap;
 }
 
-main.container h1 {
+main h1 {
+	font-size: 55px;
+	line-height: 55px;
+	font-weight: 500;
+	color: #000000;
+	background-color: #eeeeee;
+	text-align: center;
 	width: 100%;
 }
 
