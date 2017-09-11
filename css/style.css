@@ -40,7 +40,6 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header {
-	margin-bottom: 80px;
 	padding-top: 50px;
 	background-color: #eeeeee;
 }
@@ -153,6 +152,7 @@ input[type="radio"].visually-hidden {
     width:1160px;
     height:414px;
     margin:0 auto;
+	margin-bottom: 80px;
 }
 .slider input[type=radio] {
     position:absolute;
