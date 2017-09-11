@@ -76,8 +76,18 @@ input[type="radio"].visually-hidden {
 	margin-left: auto;
 }
 
-.site-navigation-current a {
-	border-bottom: 2px solid #fb565a;
+.site-navigation-current {
+	position: relative;
+}
+
+.site-navigation-current:after {
+	content: "";
+    position: absolute;
+    display: block;
+    bottom: 24px;
+    left: 23px;
+	right: 23px;
+    border-bottom: 2px solid #fb565a;
 }
 
 .site-navigation a,
@@ -273,13 +283,19 @@ input[type="radio"].visually-hidden {
 	flex-wrap: wrap;
 }
 
-main h1 {
+main.grey {
+	padding:0;
+	margin: 0;
+}
+
+.grey {
 	font-size: 55px;
 	line-height: 55px;
 	font-weight: 500;
 	color: #000000;
 	background-color: #eeeeee;
 	text-align: center;
+	padding: 100px 0;
 	width: 100%;
 }
 
@@ -765,7 +781,7 @@ main h1 {
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: 400;
-	padding-bottom: 25px;
+	padding-bottom: 19px;
 	padding-left: 50px;
 	margin: 0;
 	color: #666666;
@@ -781,7 +797,7 @@ main h1 {
     padding:14px 0;
 
 	margin-left: 50px;
-	margin-top: 10px;
+	margin-top: 22.2px;
     font-size:16px;
     color:white;
     text-transform:uppercase;
