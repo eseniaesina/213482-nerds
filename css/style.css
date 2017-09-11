@@ -150,7 +150,7 @@ input[type="radio"].visually-hidden {
 }
 .slider-controls{
     position:absolute;
-    bottom:95px;
+    bottom:105px;
     left:50%;
     width:200px;
     height:10px;
@@ -161,22 +161,26 @@ input[type="radio"].visually-hidden {
 
 .slider-controls label{
     display:inline-block;
-    width:4px;
-    height:4px;
-    margin:0 3px;
-    background:white;
-    border:3px solid white;
+    margin:0 5.5px;
     vertical-align:top;
     border-radius:50%;
     cursor:pointer;
 	background-image: url("../img/radio_out_slider.png");
+	width: 18px;
+	height: 18px;
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
+
+
 #btn-1:checked ~ .slider-controls label[for="btn-1"],
 #btn-2:checked ~ .slider-controls label[for="btn-2"],
 #btn-3:checked ~ .slider-controls label[for="btn-3"] { 
-    background:#c1c1c1;
+    background-image: url("../img/radio_in_slider.png");
+	width: 18px;
+	height: 18px;
+	background-repeat: no-repeat;
+	background-position: 0 0;
 }
 .slide{
     position:absolute;
@@ -459,8 +463,8 @@ main h1 {
 	font-size: 45px;
 	font-weight: bold;
 	color: #000000;
-	padding-top: 25px;
-	padding-right: 20px;
+	padding-top: 28px;
+	padding-right: 17px;
 	margin: 0;
 }
 
@@ -474,6 +478,13 @@ main h1 {
 	padding: 0;
 	padding-top: 27px;
 	
+}
+
+.statistic sup {
+    font-size: 63%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
 }
 
 .partners {
@@ -549,7 +560,7 @@ main h1 {
 .sorting b {
 	font-size: 18px;
 	line-height: 18px;
-	font-weight: bold:
+	font-weight: bold;
 	color: #000000;
 }
 
@@ -666,6 +677,10 @@ main h1 {
 	color: #000000;
 }
 
+.main-footer .container {
+	position: relative;
+}
+
 .footer-social {
 	text-align: left;
 	width: 260px;
@@ -676,7 +691,7 @@ main h1 {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
-	justify-content: felx-start;
+	justify-content: flex-start;
 	align-items: flex-end;
 	width: 300px;
 	list-style: none;
@@ -694,6 +709,7 @@ main h1 {
 	flex-direction: row;
 	justify-content: flex-start;
 	align-items: center;
+	padding-bottom: 70px;
 }
 
 .social-button {
@@ -725,11 +741,71 @@ main h1 {
 
 .footer-contacts {
 	position: absolute;
+	width: 320px;
+	height: 310px;
+	left: 20px;
+	bottom: 50px;
+	
+	background-color: #fff;
+	
+}
+
+.footer-contacts b {
+	display: block;
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: bold;
+	color: #000000;
+	text-transform: uppercase;
+	padding: 50px 50px 20px;
+
+}
+
+.footer-contacts p {
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 400;
+	padding-bottom: 25px;
+	padding-left: 50px;
+	margin: 0;
+	color: #666666;
+}
+
+.mobile a {
+	color: #666666;
+}
+
+.button-contacts{
+    display:block;
+    width:220px;
+    padding:14px 0;
+
+	margin-left: 50px;
+	margin-top: 10px;
+    font-size:16px;
+    color:white;
+    text-transform:uppercase;
+    text-align:center;
+    text-decoration:none;
+    background:#fb565a;
+    border-radius:3px;
+}
+
+.button-contacts:hover,
+.button-contacts:focus {
+	background-color: #e74246;
+}
+
+.button-contacts:active {
+	background-color: #d7373b;
+	color: rgba(255,255,255,0.3);
+	box-shadow: 0 3px 0 rgba(0,1,1,0.1) inset;
 }
 
 .footer-social-slogan {
 	width: 760px;
 	padding-left: 140px;
+	padding-top:7px;
 	text-align: left;
 	
 }
@@ -747,6 +823,7 @@ main h1 {
 	font-size: 16px;
 	line-height: 22px;
 	color: #444444;
+	margin-top:10px;
 }
 
 .mobile a {
