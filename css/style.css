@@ -83,7 +83,7 @@ input[type="radio"].visually-hidden {
 .site-navigation a,
 .user-navigation a {
 	display: block;
-	padding: 26px 24px;
+	padding: 26px 23.5px;
 
 	vertical-align: middle;
 	color: #000000;
@@ -103,7 +103,7 @@ input[type="radio"].visually-hidden {
 
 .user-navigation .basket {
 	position: relative;
-	padding-left: 90px;
+	padding-left: 86px;
 }
 
 .basket::before {
@@ -210,12 +210,12 @@ input[type="radio"].visually-hidden {
 .slide:nth-child(1){
     background-image:url("../img/nerds_index_slide1.png");
     background-repeat:no-repeat;
-    background-position:100% -15px;
+    background-position:99% -17px;
 }
 .slide:nth-child(2){
     background-image:url("../img/nerds_index_slide2.png");
     background-repeat:no-repeat;
-    background-position:100% 10px;
+    background-position:99% 10px;
 }
 .slide:nth-child(3){
     background-image:url("../img/nerds_index_slide3.png");
