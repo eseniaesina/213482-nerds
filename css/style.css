@@ -544,6 +544,86 @@ input[type="radio"].visually-hidden {
 
 .filters {
 	width: 260px;
+	outline: 1px solid red;
+	padding: 0;
+	margin: 0;
+}
+
+.range-filter {
+	width: 260px;
+	margin: 0;
+	padding-top: 48px;
+}
+
+.range-controls {
+	position: relative;
+	height: 41px;
+	padding-top: 39px;
+	padding-right: 20px;
+	padding-left: 20px;
+	margin-bottom: 15px;
+	border-radius: 5px;
+	background: #f1f1f1;
+}
+
+.range-controls .scale {
+	height: 2px;
+	background: #d7dcde;
+}
+
+.range-controls .bar {
+	width: 70%;
+	height: 2px;
+	background: #00ca74;
+}
+
+.range-controls .toggle {
+	position: absolute;
+	top: 30px;
+	left: 0px;
+	width: 4px;
+	height: 4px;
+	cursor: pointer;
+	border: 8px solid #fff;
+	border-radius: 50%;
+	background: #ababab;
+	box-shadow: 0 2px 1px 0 #cfcfcf;
+}
+
+.range-controls .toggle-min {
+	left: 19px;
+}
+
+.range-controls .toggle-max {
+	left: 160px;
+}
+
+.price-controls {
+	font-size: 0;
+}
+
+.price-controls label {
+	font-size: 16px;
+	display: inline-block;
+	width: 50%;
+	text-transform: uppercase;
+}
+
+.max-price {
+	text-align: right;
+}
+
+.price-controls input {
+	font-family: 'Roboto', 'Arial', sans-serif;
+	font-size: 16px;
+	width: 60px;
+	margin-left: 10px;
+	padding: 8px 10px;
+	text-align: center;
+	color: #283136;
+	border: none;
+	border-radius: 5px;
+	background: #f1f1f1;
 }
 
 .filter fieldset {
@@ -556,6 +636,8 @@ input[type="radio"].visually-hidden {
 	font-size: 18px;
 	line-height: 30px;
 	font-weight: bold;
+	text-transform: uppercase;
+	padding-top: 58px;
 }
 
 .filter ul {
@@ -563,6 +645,15 @@ input[type="radio"].visually-hidden {
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 20px;
+	margin: 0;
+	padding: 0;
+}
+
+.filter-option {
+	padding: 0;
+	margin: 0;
+	padding-left: 37px;
+	padding-top: 17px;
 }
 
 .filter-input {
@@ -583,6 +674,7 @@ input[type="radio"].visually-hidden {
 	line-height: 18px;
 	font-weight: bold;
 	color: #000000;
+	text-transform: uppercase;
 }
 
 .sorting a {
@@ -611,14 +703,23 @@ input[type="radio"].visually-hidden {
 	flex-direction: column;
 	width: 760px;
 	margin-left: auto;
+	padding-top: 60px;
+	outline: 1px solid red;
 }
 
 .catalog-item {
 	width: 360px;
+	background-image: url("../img/browser.svg");
+	background-position: 0 0;
+	background-repeat: no-repeat;
 }
 
 .catalog-item:nth-child(odd) {
 	margin-right: 20px;
+}
+
+.catalog-item img {
+	padding-top: 40px;
 }
 
 .catalog-list {
