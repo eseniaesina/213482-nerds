@@ -754,7 +754,7 @@ input[type="radio"].visually-hidden {
 
 .catalog-buy-item {
 	position: absolute;
-	height: 231px;
+	height: 221px;
 	background-color: #eeeeee;
 	text-align: center;
 	bottom: 45px;
@@ -767,12 +767,31 @@ input[type="radio"].visually-hidden {
 	line-height: 30px;
 	font-weight: bold;
 	color: #000000;
+	padding: 0;
+	margin: 0;
+	margin-top: 30px;
 	
 	text-transform: uppercase;
 }
 
+.catalog-buy-item p {
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 400;
+	margin: 0;
+	padding: 0;
+	margin-top: 12px;
+}
+
 .catalog-buy-item a {
 	color: #000000;
+}
+
+
+.button-price {
+    width: 200px;
+	height: 52px;
+    font-size:16px;
 }
 
 .pagination-list {
