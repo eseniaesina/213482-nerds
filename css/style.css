@@ -293,9 +293,6 @@ input[type="radio"].visually-hidden {
 .inner {
 	display: flex;
 	flex-wrap: wrap;
-	padding-bottom: 0;
-	margin-bottom: 0;
-	
 }
 
 
@@ -951,22 +948,30 @@ input[type="radio"].visually-hidden {
 	display: flex;
 	flex-direction: row;
 	width: 460px;
-	padding: 60px 0;
+	padding: 0;
+	margin: 0;
+	padding-top: 45px;
 }
 
 .pagination-item {
 	margin-right: 12px;
 }
 
-.pagination-item li {
+.pagination-item a{
+	display: inline-block;
 	font-size: 16px;
 	line-height: 18px;
-}
-
-.pagination-item a{
+	font-weight: 500;
+	height: 50px;
+	min-width: 25px;
 	color: #000000;
 	background-color: #eeeeee;
 	border-radius: 3px;
+	padding: 0 12.5px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 50px;
+	text-transform: uppercase;
 }
 
 .pagination-item a:hover,
@@ -980,13 +985,11 @@ input[type="radio"].visually-hidden {
 }
 
 .pagination-item-current a {
-	background-color: #ffffff;
-	border: 3px solid #dbdbdb;
+
 }
 
 .pagination-item-current a:hover {
-	background-color: #ffffff;
-	border: 3px solid #dbdbdb;
+
 }
 
 .footer-contacts b {
