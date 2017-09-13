@@ -968,10 +968,9 @@ input[type="radio"].visually-hidden {
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: 500;
-	height: 44px;
-	min-width: 19px;
+	height: 50px;
+	min-width: 25px;
 	color: #000000;
-	border: 3px solid #eeeeee;
 	background-color: #eeeeee;
 	border-radius: 3px;
 	padding: 0 12.5px;
@@ -994,11 +993,24 @@ input[type="radio"].visually-hidden {
 
 .pagination-item-current a {
 	background-color: #fff;
+	height: 44px;
+	min-width: 19px;
 	border: 3px solid #dbdbdb;
 }
 
-.pagination-item-current a:hover {
+.pagination-item-current a:hover,
+.pagination-item-current a:focus {
+	background-color: #fff;
+	height: 44px;
+	min-width: 19px;
+	border: 3px solid #dbdbdb;
+}
 
+.pagination-item-current a:active {
+	background-color: #fff;
+	height: 44px;
+	min-width: 19px;
+	border: 3px solid #dbdbdb;
 }
 
 .footer-contacts b {
