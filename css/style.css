@@ -303,7 +303,6 @@ input[type="radio"].visually-hidden {
 	padding: 0;
 	height: 220px;
 	width: 100%;
-	outline: 1px solid red;
 }
 
 .grey h1 {
@@ -556,7 +555,6 @@ input[type="radio"].visually-hidden {
 
 .filters {
 	width: 260px;
-	outline: 1px solid red;
 	padding: 0;
 	margin: 0;
 	padding-top: 56px;
@@ -770,6 +768,14 @@ input[type="radio"].visually-hidden {
 	opacity: 0.4;
 }
 
+.filter-option input[type="radio"]+ label:hover::before,
+.filter-option input[type="radio"]:checked + label:hover::before,
+.filter-option input[type="checkbox"] + label:hover::before,
+.filter-option input[type="checkbox"]:checked + label:hover::before {
+opacity: 1;
+}
+
+
 .filter button {
 	outline: none;
 }
@@ -806,21 +812,22 @@ input[type="radio"].visually-hidden {
 .sorting {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
 	padding: 0;
 	margin: 0;
-	padding-bottom: 22px;
+	padding-bottom: 30px;
 }
 
 .sorting button {
 	border: none;
 	background-color: transparent;
+	margin-top: 5px;
 }
 
 .sorting-down {
 	background-image: url("../img/icon_down_dir.svg");
 	background-position: 0 0;
 	background-repeat: no-repeat;
+	margin-left: 17px;
 }
 
 .sorting-up {
@@ -828,6 +835,7 @@ input[type="radio"].visually-hidden {
 	background-position: 0 0;
 	background-repeat: no-repeat;
 	opacity: 0.3;
+	margin-left: 17px;
 }
 
 
@@ -837,7 +845,7 @@ input[type="radio"].visually-hidden {
 	font-weight: bold;
 	color: #000000;
 	text-transform: uppercase;
-	margin-right: 268px;
+	margin-right: 265px;
 }
 
 .sorting a {
@@ -847,7 +855,7 @@ input[type="radio"].visually-hidden {
 	font-weight: 400;
 	color: rgba(0,0,0,0.3);
 	text-transform: uppercase;
-	margin-right: 20px;
+	margin-right: 28px;
 }
 
 .sorting a.sorting-current,
@@ -872,7 +880,6 @@ input[type="radio"].visually-hidden {
 	margin: 0;
 	margin-left: auto;
 	padding-top: 60px;
-	outline: 1px solid red;
 }
 
 .catalog-list {
@@ -890,7 +897,7 @@ input[type="radio"].visually-hidden {
 	width: 360px;
 	margin: 0;
 	padding: 0;
-	margin-top: 30px;
+	margin-top: 28px;
 }
 
 .catalog-item:nth-child(odd) {
@@ -907,7 +914,6 @@ input[type="radio"].visually-hidden {
 	left: 0px;
 	top: 0px;
 	opacity: 0.12;
-	outline: 1px solid red;
 }
 
 .catalog-item img {
@@ -988,7 +994,7 @@ input[type="radio"].visually-hidden {
 	width: 460px;
 	padding: 0;
 	margin: 0;
-	padding-top: 45px;
+	padding-top: 50px;
 }
 
 .pagination-list li {
