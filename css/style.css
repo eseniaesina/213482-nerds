@@ -225,6 +225,18 @@ input[type="radio"].visually-hidden {
     background:#fb565a;
     border-radius:3px;
 }
+
+.btn:hover,
+.btn:focus {
+	background-color: #e74246;
+}
+
+.btn:active {
+	background-color: #d7373b;
+	color: rgba(255,255,255,0.3);
+	box-shadow: 0 3px 0 rgba(0,1,1,0.1) inset;
+}
+
 .slide:nth-child(1){
     background-image:url("../img/nerds_index_slide1.png");
     background-repeat:no-repeat;
@@ -281,6 +293,9 @@ input[type="radio"].visually-hidden {
 .inner {
 	display: flex;
 	flex-wrap: wrap;
+	padding-bottom: 0;
+	margin-bottom: 0;
+	
 }
 
 
@@ -547,12 +562,21 @@ input[type="radio"].visually-hidden {
 	outline: 1px solid red;
 	padding: 0;
 	margin: 0;
+	padding-top: 60px;
+	padding-bottom: 0;
+}
+
+.filter {
+	padding: 0;
+	margin: 0;
 }
 
 .range-filter {
 	width: 260px;
 	margin: 0;
-	padding-top: 48px;
+	padding: 0;
+	padding-top: 30px;
+	padding-bottom: 60px;
 }
 
 .range-controls {
@@ -637,16 +661,19 @@ input[type="radio"].visually-hidden {
 	line-height: 30px;
 	font-weight: bold;
 	text-transform: uppercase;
-	padding-top: 58px;
+	margin: 0;
+	padding: 0;
+	padding-bottom: 15px;
 }
 
-.filter ul {
+.filter .filter-option {
 	list-style: none;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 20px;
 	margin: 0;
 	padding: 0;
+	padding-bottom: 25px;
 }
 
 
@@ -663,18 +690,26 @@ input[type="radio"].visually-hidden {
 	color: rgba(40,49,54,0.3);
 }
 
-.filter-option {
+.filter-option li {
 	padding: 0;
 	margin: 0;
-	padding-top: 17px;
-
+	padding-bottom: 20px;
 }
+
+.filter-option input[type="radio"] {
+	display: none;
+}
+
+.filter-option input[type="checkbox"] {
+	display: none;
+}
+
 .filter-option label {
 	position: relative;
 	padding-left: 35px;
 }
 
-.filter-option label::before {
+.filter-option input[type="radio"] + label::before {
 	content: "";
 	position: absolute;
     display: block;
@@ -688,6 +723,86 @@ input[type="radio"].visually-hidden {
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	opacity: 0.4;
+}
+
+.filter-option input[type="radio"]:checked + label::before {
+	content: "";
+	position: absolute;
+    display: block;
+	padding: 0;
+    margin:0;
+    vertical-align:top;
+    cursor:pointer;
+	background-image: url("../img/radio_on.svg");
+	width: 25px;
+	height: 25px;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	opacity: 0.4;
+}
+
+.filter-option input[type="checkbox"] + label::before {
+	content: "";
+	position: absolute;
+    display: block;
+	padding: 0;
+    margin:0;
+    vertical-align:top;
+    cursor:pointer;
+	background-image: url("../img/checkbox-off.svg");
+	width: 27px;
+	height: 23px;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	opacity: 0.4;
+}
+
+.filter-option input[type="checkbox"]:checked + label::before {
+	content: "";
+	position: absolute;
+    display: block;
+	padding: 0;
+    margin:0;
+    vertical-align:top;
+    cursor:pointer;
+	background-image: url("../img/checkbox-on.svg");
+	width: 27px;
+	height: 23px;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	opacity: 0.4;
+}
+
+.filter button {
+	outline: none;
+}
+
+.filter-button {
+	display: inline-block;
+	width: 260px;
+	height: 50px;
+	color: #000;
+	background-color: #eee;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 500;
+	text-align: center;
+	vertical-align: middle;
+	padding: 0;
+	margin-top: 5px;
+	border: none;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+	background-color: #dfdfdf;
+}
+
+.filter-button:active {
+	background-color: #d5d5d5;
+	color: rgba(0,0,0,0.3);
+	box-shadow: 0 3px 0 rgba(0,1,1,0.1) inset;
+	outline: none;
 }
 
 .sorting {
@@ -815,10 +930,21 @@ input[type="radio"].visually-hidden {
 
 
 .button-price {
+	display: inline-block;
     width: 200px;
 	height: 52px;
     font-size:16px;
+	line-height: 18px;
+	font-weight: 500;
+	text-align: center;
+	vertical-align: middle;
+	margin-top: 10px;
+	border: none;
+	background-color: #fb565a;
+	border-radius: 3px;
+	color: #fff;
 }
+
 
 .pagination-list {
 	list-style: none;
