@@ -559,7 +559,7 @@ input[type="radio"].visually-hidden {
 	outline: 1px solid red;
 	padding: 0;
 	margin: 0;
-	padding-top: 60px;
+	padding-top: 56px;
 	padding-bottom: 0;
 }
 
@@ -572,8 +572,8 @@ input[type="radio"].visually-hidden {
 	width: 260px;
 	margin: 0;
 	padding: 0;
-	padding-top: 30px;
-	padding-bottom: 60px;
+	padding-top: 35px;
+	padding-bottom: 55px;
 }
 
 .range-controls {
@@ -786,6 +786,7 @@ input[type="radio"].visually-hidden {
 	text-align: center;
 	vertical-align: middle;
 	padding: 0;
+	padding-top: 5px;
 	margin-top: 5px;
 	border: none;
 }
@@ -817,11 +818,32 @@ input[type="radio"].visually-hidden {
 }
 
 .sorting a {
+	display: inline-block;
 	font-size: 14px;
 	line-height: 18px;
 	font-weight: 400;
 	color: rgba(0,0,0,0.3);
 	text-transform: uppercase;
+	margin-right: 45px;
+}
+
+.sorting button {
+		display: none;
+}
+
+.sorting-down {
+	position: relative;
+	padding-left: 30px;
+}
+
+.sorting-down::before {
+	content: "";
+	position: absolute;
+	width: 11px;
+	height: 10px;
+	background-image: url("../img/icon_down_dir.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
 }
 
 .sorting a.sorting-current {
@@ -1065,7 +1087,7 @@ input[type="radio"].visually-hidden {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 80px;
+	margin-top: 61px;
 }
 
 .footer-contacts {
@@ -1098,6 +1120,10 @@ input[type="radio"].visually-hidden {
 	padding-left: 50px;
 	margin: 0;
 	color: #666666;
+}
+
+.first {
+	padding-top: 17px;
 }
 
 .mobile a {
