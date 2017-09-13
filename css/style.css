@@ -553,6 +553,24 @@ input[type="radio"].visually-hidden {
 	padding: 0;
 }
 
+.partners-list li:nth-child(1),
+.partners-list li:nth-child(2),
+.partners-list li:nth-child(3) {
+	position: relative;
+}
+
+.partners-list li:nth-child(1)::after,
+.partners-list li:nth-child(2)::after,
+.partners-list li:nth-child(3)::after {
+	content: "";
+	position: absolute;
+	width: 2px;
+	height: 52px;
+	background-color: #efefef;
+	right: 0;
+	top: 64px;
+}
+
 .partners-item a {
 	list-style: none;
 	opacity: 0.2;
