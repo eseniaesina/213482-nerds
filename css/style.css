@@ -804,10 +804,32 @@ input[type="radio"].visually-hidden {
 }
 
 .sorting {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 	padding: 0;
 	margin: 0;
 	padding-bottom: 22px;
 }
+
+.sorting button {
+	border: none;
+	background-color: transparent;
+}
+
+.sorting-down {
+	background-image: url("../img/icon_down_dir.svg");
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+
+.sorting-up {
+	background-image: url("../img/icon_up_dir.svg");
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	opacity: 0.3;
+}
+
 
 .sorting b {
 	font-size: 18px;
@@ -815,6 +837,7 @@ input[type="radio"].visually-hidden {
 	font-weight: bold;
 	color: #000000;
 	text-transform: uppercase;
+	margin-right: 268px;
 }
 
 .sorting a {
@@ -824,29 +847,11 @@ input[type="radio"].visually-hidden {
 	font-weight: 400;
 	color: rgba(0,0,0,0.3);
 	text-transform: uppercase;
-	margin-right: 45px;
+	margin-right: 20px;
 }
 
-.sorting button {
-		display: none;
-}
-
-.sorting-down {
-	position: relative;
-	padding-left: 30px;
-}
-
-.sorting-down::before {
-	content: "";
-	position: absolute;
-	width: 11px;
-	height: 10px;
-	background-image: url("../img/icon_down_dir.svg");
-	background-repeat: no-repeat;
-	background-position: 0 0;
-}
-
-.sorting a.sorting-current {
+.sorting a.sorting-current,
+.sorting-current {
 	color: rgba(0,0,0,1);
 }
 
@@ -913,6 +918,7 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-buy-item {
+	display: none;
 	position: absolute;
 	height: 231px;
 	background-color: #eeeeee;
@@ -920,6 +926,14 @@ input[type="radio"].visually-hidden {
 	bottom: 6px;
 	left: 0;
 	right: 0;
+}
+
+.catalog-item:hover .catalog-buy-item {
+	display: block;
+}
+
+.catalog-item:hover span {
+	opacity: 1;
 }
 
 .catalog-buy-item h3 {
@@ -948,10 +962,10 @@ input[type="radio"].visually-hidden {
 }
 
 
-.button-price {
+.catalog-buy-item .button-price {
 	display: inline-block;
     width: 200px;
-	height: 52px;
+	height: 32px;
     font-size:16px;
 	line-height: 18px;
 	font-weight: 500;
@@ -962,6 +976,8 @@ input[type="radio"].visually-hidden {
 	background-color: #fb565a;
 	border-radius: 3px;
 	color: #fff;
+	margin-top: 35px;
+	padding-top: 20px;
 }
 
 
