@@ -1136,8 +1136,7 @@ opacity: 1;
 	left: 20px;
 	bottom: 50px;
 	
-	background-color: #fff;
-	
+	background-color: #fff;	
 }
 
 .footer-contacts b {
@@ -1148,7 +1147,6 @@ opacity: 1;
 	color: #000000;
 	text-transform: uppercase;
 	padding: 50px 50px 20px;
-
 }
 
 .footer-contacts p {
@@ -1201,7 +1199,6 @@ opacity: 1;
 	padding-left: 140px;
 	padding-top:7px;
 	text-align: left;
-	
 }
 
 .footer-social-slogan b {
@@ -1237,7 +1234,7 @@ opacity: 1;
 	display: none;
 	color: #000000;
 	background-color: #ffffff;
-	box-shadow: 0 20px 0 40px #ffffff;  //сомневаюсь, нужно будет потом проверить
+	box-shadow: 0 20px 0 40px #ffffff;
 }
 
 .modal h2 {
