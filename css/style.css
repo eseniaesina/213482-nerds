@@ -953,11 +953,17 @@ input[type="radio"].visually-hidden {
 	padding-top: 45px;
 }
 
-.pagination-item {
-	margin-right: 12px;
+.pagination-list li {
+	padding: 0;
+	margin: 0;
+	margin-right: 10px;
 }
 
-.pagination-item a{
+.pagination-list .next a {
+	padding: 0 80px;
+}
+
+.pagination-list a{
 	display: inline-block;
 	font-size: 16px;
 	line-height: 18px;
