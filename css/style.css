@@ -66,7 +66,7 @@ input[type="radio"].visually-hidden {
 	display: flex;
 	flex-wrap: wrap;
 	width: 660px;
-	padding-left: 176px;
+	padding-left: 179px;
 }
 
 .user-navigation {
@@ -83,7 +83,7 @@ input[type="radio"].visually-hidden {
 	content: "";
 	position: absolute;
 	display: block;
-	bottom: 24px;
+	bottom: 20px;
 	left: 23px;
 	right: 23px;
 	border-bottom: 2px solid #fb565a;
@@ -92,7 +92,7 @@ input[type="radio"].visually-hidden {
 .site-navigation a,
 .user-navigation a {
 	display: block;
-	padding: 26px 23.5px;
+	padding: 25px 23px;
 
 	vertical-align: middle;
 	color: #000000;
@@ -112,15 +112,15 @@ input[type="radio"].visually-hidden {
 
 .user-navigation .basket {
 	position: relative;
-	padding-left: 86px;
+	padding-left: 85px;
 }
 
 .basket::before {
 	content: "";
 
 	position: absolute;
-	top: 33px;
-	left: 43px;
+	top: 31.5px;
+	left: 45px;
 	
 	width: 15px;
 	height: 15px;
@@ -148,7 +148,7 @@ input[type="radio"].visually-hidden {
 .slider {
 	position:relative;
 	width:1160px;
-	height:414px;
+	height:415px;
 	margin:0 auto;
 	margin-bottom: 80px;
 }
@@ -174,7 +174,7 @@ input[type="radio"].visually-hidden {
 
 .slider-controls label {
 	display:inline-block;
-	margin:0 5.5px;
+	margin:0 6.5px;
 	vertical-align:top;
 	border-radius:50%;
 	cursor:pointer;
@@ -206,7 +206,7 @@ input[type="radio"].visually-hidden {
 
 .slide-text {
 	width:560px;
-	padding:60px 0;
+	padding:62px 0;
 	color:#283136;
 }
 
@@ -221,8 +221,12 @@ input[type="radio"].visually-hidden {
 .slide .btn {
 	display:block;
 	width:240px;
-	padding:14px 0;
+	padding:17px 0;
 	margin-top:40px;
+	font-family: inherit;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 500;
 	font-size:16px;
 	color:white;
 	text-transform:uppercase;
@@ -316,7 +320,7 @@ input[type="radio"].visually-hidden {
 	text-align: center;
 	margin: 0;
 	padding: 0;
-	height: 220px;
+	height: 225px;
 	width: 100%;
 }
 
@@ -327,7 +331,8 @@ input[type="radio"].visually-hidden {
 	color: #000000;
 	padding: 0;
 	margin: 0;
-	padding-top: 60px;
+	padding-top: 62px;
+	padding-right: 1px;
 }
 
 .index-columns {
@@ -441,7 +446,7 @@ input[type="radio"].visually-hidden {
 .rules {
 	width: 660px;
 	padding: 0;
-	margin-bottom: 45px;
+	margin-bottom: 53px;
 }
 
 .rules b {
@@ -465,14 +470,14 @@ input[type="radio"].visually-hidden {
 .rules-work li {
 	position: relative;
 	padding-left: 37px;
-	padding-bottom: 25px;
+	padding-bottom: 23px;
 }
 
 .rules-work li::before {
 	content: "";
 
 	position: absolute;
-	top: 10px;
+	top: 12px;
 	left: 0;
 
 	width: 25px;
@@ -498,7 +503,7 @@ input[type="radio"].visually-hidden {
 .statistic {
 	width: 360px;
 	padding-top: 40px;
-	margin-bottom: 45px;
+	margin-bottom: 53px;
 }
 
 .statistic h4 {
@@ -509,7 +514,7 @@ input[type="radio"].visually-hidden {
 	font-size: 45px;
 	font-weight: bold;
 	color: #000000;
-	padding-top: 28px;
+	padding-top: 30px;
 	padding-right: 17px;
 	margin: 0;
 }
@@ -522,7 +527,8 @@ input[type="radio"].visually-hidden {
 	text-align: left;
 	margin: 0;
 	padding: 0;
-	padding-top: 27px;
+	padding-top: 28px;
+	padding-left: 2px;
 	
 }
 
@@ -567,7 +573,7 @@ input[type="radio"].visually-hidden {
 	width: 2px;
 	height: 52px;
 	background-color: #efefef;
-	right: 0;
+	right: 0px;
 	top: 64px;
 }
 
@@ -831,6 +837,7 @@ opacity: 1;
 	text-align: center;
 	vertical-align: middle;
 	padding: 0;
+	margin: 0;
 	padding-top: 5px;
 	margin-top: 5px;
 	border: none;
@@ -867,7 +874,7 @@ opacity: 1;
 	background-image: url("../img/icon_down_dir.svg");
 	background-position: 0 0;
 	background-repeat: no-repeat;
-	margin-left: 18px;
+	margin-left: 13px;
 }
 
 .sorting-up {
@@ -875,7 +882,7 @@ opacity: 1;
 	background-position: 0 0;
 	background-repeat: no-repeat;
 	opacity: 0.3;
-	margin-left: 18px;
+	margin-left: 16px;
 }
 
 .sorting b {
@@ -894,7 +901,7 @@ opacity: 1;
 	font-weight: 400;
 	color: rgba(0,0,0,0.3);
 	text-transform: uppercase;
-	margin-right: 25px;
+	margin-right: 26px;
 }
 
 .sorting a.sorting-current,
@@ -1144,7 +1151,7 @@ opacity: 1;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 61px;
+	margin-top: 64px;
 }
 
 .footer-contacts {
@@ -1152,7 +1159,7 @@ opacity: 1;
 	width: 320px;
 	height: 310px;
 	left: 20px;
-	bottom: 50px;
+	bottom: 53px;
 	
 	background-color: #fff;	
 }
@@ -1171,27 +1178,29 @@ opacity: 1;
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: 400;
-	padding-bottom: 19px;
+	padding-top: 2px;
+	padding-bottom: 17px;
 	padding-left: 50px;
 	margin: 0;
 	color: #666666;
 }
 
 .first {
-	padding-top: 17px;
+	padding-top: 15px;
 }
 
 .mobile a {
 	color: #666666;
+	text-decoration: none;
 }
 
 .button-contacts{
 	display:block;
 	width:220px;
-	padding:14px 0;
+	padding:16.5px 0;
 
 	margin-left: 50px;
-	margin-top: 22.2px;
+	margin-top: 21px;
 	font-size:16px;
 	color:white;
 	text-transform:uppercase;
@@ -1233,11 +1242,6 @@ opacity: 1;
 	line-height: 22px;
 	color: #444444;
 	margin-top:10px;
-}
-
-.mobile a {
-	color: #666666;
-	text-decoration: none;
 }
 
 .modal-close button {
