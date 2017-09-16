@@ -1021,6 +1021,7 @@ opacity: 1;
 	margin: 0 auto;
 	padding: 0;
 	margin-top: 13px;
+	width: 200px;
 }
 
 .catalog-buy-item a {
@@ -1169,7 +1170,7 @@ opacity: 1;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 64px;
+	margin-top: 60px;
 }
 
 .footer-contacts {
@@ -1204,7 +1205,7 @@ opacity: 1;
 }
 
 .first {
-	padding-top: 15px;
+	padding-top: 22px;
 }
 
 .mobile a {
