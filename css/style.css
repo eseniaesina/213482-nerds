@@ -1289,25 +1289,36 @@ opacity: 1;
 	margin-top:9px;
 }
 
-.modal-close button {
-	font-family: inherit;
-}
-
-.modal input {
-	font-family: inherit;
-}
-
 .modal {
-	display: none;
+	position: fixed;
 	color: #000000;
+
 	background-color: #ffffff;
-	box-shadow: 0 20px 0 40px #ffffff;
+	/*box-shadow: 0 20px 0 40px #ffffff;*/
+	
+	outline: 1px solid grey;
+}
+
+.modal-write-us {
+	bottom: 180px;
+	left: 240px;
+	
+	width: 780px;
+	padding: 70px 80px 84px 100px;
 }
 
 .modal h2 {
 	font-size: 45px;
 	line-height: 45px;
 	font-weight: 500;
+}
+
+.modal-close button {
+	font-family: inherit;
+}
+
+.modal input {
+	font-family: inherit;
 }
 
 .write-us-form input,
