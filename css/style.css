@@ -55,6 +55,15 @@ input[type="radio"].visually-hidden {
 	text-transform: uppercase;
 }
 
+.logo:hover,
+.logo:focus {
+	opacity: 0.8;
+}
+
+.logo:active {
+	opacity: 0.3;
+}
+
 .site-navigation,
 .user-navigation {
 	list-style: none;
