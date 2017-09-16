@@ -884,6 +884,8 @@ opacity: 1;
 	border: none;
 	background-color: transparent;
 	margin-top: 5px;
+	opacity: 0.12;
+	outline: none;
 }
 
 .sorting-down {
@@ -897,8 +899,19 @@ opacity: 1;
 	background-image: url("../img/icon_up_dir.svg");
 	background-position: 0 0;
 	background-repeat: no-repeat;
-	opacity: 0.3;
 	margin-left: 16px;
+}
+
+.sorting-down:hover,
+.sorting-down:focus,
+.sorting-up:hover,
+.sorting-up:focus {
+	opacity: 0.6;
+}
+
+.sorting-down:active,
+.sorting-up:active {
+	opacity: 1;
 }
 
 .sorting b {
@@ -929,6 +942,10 @@ opacity: 1;
 .sorting a.sorting-current,
 .sorting-current {
 	color: rgba(0,0,0,1);
+}
+
+.sorting-down.sorting-current {
+	opacity: 1;
 }
 
 .sorting a[href]:hover,
