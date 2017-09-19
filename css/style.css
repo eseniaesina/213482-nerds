@@ -1310,6 +1310,8 @@ opacity: 1;
 	
 	width: 760px;
 	padding: 70px 80px 84px 100px;
+	
+	display: none;
 }
 
 .modal h2 {
