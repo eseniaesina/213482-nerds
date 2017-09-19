@@ -848,6 +848,7 @@ input[type="radio"].visually-hidden {
 .filter-option input[type="radio"]:disabled +label:hover::before,
 .filter-option input[type="checkbox"]:disabled +label:hover::before {
 	opacity: 0.1;
+	cursor: default;
 }
 
 .filter button {
