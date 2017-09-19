@@ -831,23 +831,23 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-option input[type="checkbox"]:disabled + label::before {
-  opacity: 0.1;
+	opacity: 0.1;
 }
 
 .filter-option input[type="radio"]:disabled + label::before {
-  opacity: 0.1;
+	opacity: 0.1;
 }
 
 .filter-option input[type="radio"]+ label:hover::before,
 .filter-option input[type="radio"]:checked + label:hover::before,
 .filter-option input[type="checkbox"] + label:hover::before,
 .filter-option input[type="checkbox"]:checked + label:hover::before {
-opacity: 1;
+	opacity: 1;
 }
 
 .filter-option input[type="radio"]:disabled +label:hover::before,
 .filter-option input[type="checkbox"]:disabled +label:hover::before {
-	opaсity: 0.1;
+	opacity: 0.1;
 }
 
 .filter button {
