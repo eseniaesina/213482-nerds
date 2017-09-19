@@ -1306,10 +1306,10 @@ opacity: 1;
 .modal-write-us {
 	bottom: 180px;
 	left: 50%;
-	margin-left: -380px;
+	margin-left: -480px;
 	
 	width: 760px;
-	padding: 70px 80px 84px 100px;
+	padding: 70px 100px 84px 100px;
 }
 
 .modal h2 {
