@@ -1309,7 +1309,13 @@ opacity: 1;
 	margin-left: -480px;
 	
 	width: 760px;
+<<<<<<< HEAD
 	padding: 70px 100px 84px 100px;
+=======
+	padding: 70px 80px 84px 100px;
+	
+	display: none;
+>>>>>>> a8687a506c4b212146fe85eb836c0f5710a1b0e8
 }
 
 .modal h2 {
