@@ -830,11 +830,24 @@ input[type="radio"].visually-hidden {
 	opacity: 0.4;
 }
 
+.filter-option input[type="checkbox"]:disabled + label::before {
+  opacity: 0.1;
+}
+
+.filter-option input[type="radio"]:disabled + label::before {
+  opacity: 0.1;
+}
+
 .filter-option input[type="radio"]+ label:hover::before,
 .filter-option input[type="radio"]:checked + label:hover::before,
 .filter-option input[type="checkbox"] + label:hover::before,
 .filter-option input[type="checkbox"]:checked + label:hover::before {
 opacity: 1;
+}
+
+.filter-option input[type="radio"]:disabled +label:hover::before,
+.filter-option input[type="checkbox"]:disabled +label:hover::before {
+	opaсity: 0.1;
 }
 
 .filter button {
@@ -1202,7 +1215,7 @@ opacity: 1;
 .footer-contacts {
 	position: absolute;
 	width: 320px;
-	height: 310px;
+	min-height: 310px;
 	left: 20px;
 	bottom: 53px;
 	
@@ -1439,6 +1452,12 @@ opacity: 1;
 .write-us-item input:focus,
 .write-us-item-text textarea:focus {
 	border-color: #444444;
+}
+
+.modal-write-us input:invalid,
+.modal-write-us textarea:invalid {
+	border-color: #e74246;
+	color: #e74246;
 }
 
 .modal-show {
