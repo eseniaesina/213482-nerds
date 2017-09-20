@@ -170,6 +170,7 @@ input[type="radio"].visually-hidden {
 	position: absolute;
 	opacity: 0;
 }
+
 .slider-controls {
 	position: absolute;
 	bottom: 105px;
@@ -361,7 +362,6 @@ input[type="radio"].visually-hidden {
 	justify-content: flex-start;
 	margin: 0;
 	padding: 0;
-	
 
 	list-style: none;
 }
@@ -397,7 +397,6 @@ input[type="radio"].visually-hidden {
 	background: url("../img/illustration1.jpg"), linear-gradient(#ff595d 146px, transparent 146px);
 	background-position: top center;
 	background-repeat: no-repeat;
-
 }
 
 .application {
@@ -545,7 +544,6 @@ input[type="radio"].visually-hidden {
 	padding: 0;
 	padding-top: 30px;
 	padding-left: 1px;
-	
 }
 
 .statistic sup {
@@ -732,7 +730,6 @@ input[type="radio"].visually-hidden {
 	padding: 0;
 	padding-bottom: 25px;
 }
-
 
 .filter-input {
 	font: inherit;
@@ -949,7 +946,7 @@ input[type="radio"].visually-hidden {
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
 	.sorting a {
-	letter-spacing: -0.02em;
+		letter-spacing: -0.02em;
 	}
 }
 
@@ -1458,7 +1455,30 @@ input[type="radio"].visually-hidden {
 .modal-write-us input:invalid,
 .modal-write-us textarea:invalid {
 	border-color: #e74246;
+}
+
+.modal-write-us input:invalid::-webkit-input-placeholder,
+.modal-write-us textarea:invalid::-webkit-input-placeholder {
 	color: #e74246;
+	opacity: 1;
+}
+
+.modal-write-us input:invalid::-moz-placeholder,
+.modal-write-us textarea:invalid::-moz-placeholder {
+	color: #e74246;
+	opacity: 1;
+}
+
+.modal-write-us input:invalid:-ms-placeholder,
+.modal-write-us textarea:invalid:-ms-placeholder {
+	color: #e74246;
+	opacity: 1;
+}
+
+.modal-write-us input:invalid::placeholder,
+.modal-write-us textarea:invalid::placeholder {
+	color: #e74246;
+	opacity: 1;
 }
 
 .modal-show {
