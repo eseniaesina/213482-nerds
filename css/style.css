@@ -1211,6 +1211,7 @@ input[type="radio"].visually-hidden {
 	background-image: url("../img/map_contacts.jpg");
 	background-repeat: no-repeat;
 	background-position: center 0;
+  line-height: 0;
 }
 
 .footer-map iframe {
