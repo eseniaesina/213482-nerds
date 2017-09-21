@@ -1210,11 +1210,12 @@ input[type="radio"].visually-hidden {
 	margin-top: 60px;
 	background-image: url("../img/map_contacts.jpg");
 	background-repeat: no-repeat;
-	background-position: 0 0;
+	background-position: center 0;
 }
 
 .footer-map iframe {
 	width: 100%;
+	border: 0;
 }
 
 .footer-contacts {
@@ -1503,6 +1504,7 @@ input[type="radio"].visually-hidden {
 .modal-write-us input:invalid,
 .modal-write-us textarea:invalid {
 	border-color: #e74246;
+	color: #e74246;
 }
 
 .modal-write-us input:invalid::-webkit-input-placeholder,
